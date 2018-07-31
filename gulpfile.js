@@ -10,7 +10,9 @@ gulp.task('html', function () {
 });
 
 gulp.task('styles', function () {
-    console.log('Imagina Sass ou PostCss tasks a correr aqui.');
+    //aqui definimos o ficheiro de origem e o de destino para ondem queremos direcionar
+    // o return é para garantir que o gulp corre dado ser assincrono
+    return gulp.src('.app/assets/styles/styles.css').pipe(gulp.dest('./app/temp/styles'));
 });
 
 gulp.task('watch', function(){
