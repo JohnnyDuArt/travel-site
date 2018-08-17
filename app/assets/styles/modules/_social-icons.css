@@ -1,0 +1,38 @@
+.social-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social-icons {
+    text-align: center;
+    cursor: pointer;
+  
+
+
+    &__icon {
+        background-color: $mainOrange;
+        display: inline-block;
+        margin: 0 5px 5px 5px;
+        width: 33%;
+        height: 33%;
+        position: relative;
+
+        @mixin atSmall {
+            width: 72px;
+            height: 72px;
+            margin: 0 5px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            float: left;
+        }
+    }
+}

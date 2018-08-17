@@ -1,0 +1,61 @@
+.modal {
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, .94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.6);
+    transition: all 0.5s ease-out;
+
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    &__title {
+        text-align: center;
+        color: $mainBlue;
+        font-size: 3.2rem;
+        font-weight: 300;
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+    }
+
+    &__title strong {
+        font-weight: 800;
+    }
+
+    &__description {
+        position: relative;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 450px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+        font-size: 2rem;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
+        color: $mainBlue;
+        cursor: pointer;
+
+        &:hover {
+            color: $mainOrange;
+        }
+    }
+}
