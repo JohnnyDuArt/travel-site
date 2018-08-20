@@ -1,3 +1,26 @@
+$(document).ready(function () {
+	$('.open-modal').on('click', function () {
+    
+    $('.modal').css('opacity', '1');
+    $('.modal').css('visibility', 'visible');
+    
+    return false;
+	});
+  
+  $('.modal__close').on('click', function () {
+    $('.modal').css('opacity', '0').css('visibility', 'hidden');
+    
+    return false;
+  });
+});
+
+    $(document).on('keyup', function (event) {
+  	if (event.keyCode == 27) {
+        $('.modal').css('opacity', '0').css('visibility', 'hidden');
+  };
+});
+
+/*
 import $ from 'jquery';
 
 class Modal {
@@ -34,3 +57,4 @@ class Modal {
 }
 
 export default Modal;
+*/

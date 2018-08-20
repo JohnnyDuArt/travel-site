@@ -1,3 +1,21 @@
+
+$(document).ready(function(){
+    $(document).on('scroll', function(){
+    
+    // if ($(document).scrollTop() > 50) {
+        $('.site-header').addClass('.transformed');
+        
+       // } else {
+     //       $('.site-header').removeClass('.transformed');
+       // }
+
+    });
+
+});
+
+    
+
+/*
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 import smoothScroll from 'jquery-smooth-scroll';
@@ -63,3 +81,4 @@ class StickyHeader {
 }
 
 export default StickyHeader;
+*/
